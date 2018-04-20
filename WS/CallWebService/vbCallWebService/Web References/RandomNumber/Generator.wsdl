@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://fernandolucas.info/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://fernandolucas.info/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://fernandolucas.info/">
+      <s:element name="GenerateRandom">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Max" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateRandomResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateRandomResult" type="s0:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenerateRandomNormalized">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateRandomNormalizedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenerateRandomNormalizedResult" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateRandomDotOrg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Max" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateRandomDotOrgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateRandomDotOrgResult" type="s0:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeneratePseudoRandom">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Max" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Count" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeneratePseudoRandomResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeneratePseudoRandomResult" type="s0:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfInt" nillable="true" type="s0:ArrayOfInt" />
+      <s:element name="float" type="s:float" />
+    </s:schema>
+  </types>
+  <message name="GenerateRandomSoapIn">
+    <part name="parameters" element="s0:GenerateRandom" />
+  </message>
+  <message name="GenerateRandomSoapOut">
+    <part name="parameters" element="s0:GenerateRandomResponse" />
+  </message>
+  <message name="GenerateRandomNormalizedSoapIn">
+    <part name="parameters" element="s0:GenerateRandomNormalized" />
+  </message>
+  <message name="GenerateRandomNormalizedSoapOut">
+    <part name="parameters" element="s0:GenerateRandomNormalizedResponse" />
+  </message>
+  <message name="GenerateRandomDotOrgSoapIn">
+    <part name="parameters" element="s0:GenerateRandomDotOrg" />
+  </message>
+  <message name="GenerateRandomDotOrgSoapOut">
+    <part name="parameters" element="s0:GenerateRandomDotOrgResponse" />
+  </message>
+  <message name="GeneratePseudoRandomSoapIn">
+    <part name="parameters" element="s0:GeneratePseudoRandom" />
+  </message>
+  <message name="GeneratePseudoRandomSoapOut">
+    <part name="parameters" element="s0:GeneratePseudoRandomResponse" />
+  </message>
+  <message name="GenerateRandomHttpPostIn">
+    <part name="ID" type="s:string" />
+    <part name="Min" type="s:string" />
+    <part name="Max" type="s:string" />
+    <part name="Count" type="s:string" />
+  </message>
+  <message name="GenerateRandomHttpPostOut">
+    <part name="Body" element="s0:ArrayOfInt" />
+  </message>
+  <message name="GenerateRandomNormalizedHttpPostIn" />
+  <message name="GenerateRandomNormalizedHttpPostOut">
+    <part name="Body" element="s0:float" />
+  </message>
+  <message name="GenerateRandomDotOrgHttpPostIn">
+    <part name="Min" type="s:string" />
+    <part name="Max" type="s:string" />
+    <part name="Count" type="s:string" />
+  </message>
+  <message name="GenerateRandomDotOrgHttpPostOut">
+    <part name="Body" element="s0:ArrayOfInt" />
+  </message>
+  <message name="GeneratePseudoRandomHttpPostIn">
+    <part name="Min" type="s:string" />
+    <part name="Max" type="s:string" />
+    <part name="Count" type="s:string" />
+  </message>
+  <message name="GeneratePseudoRandomHttpPostOut">
+    <part name="Body" element="s0:ArrayOfInt" />
+  </message>
+  <portType name="GeneratorSoap">
+    <operation name="GenerateRandom">
+      <input message="s0:GenerateRandomSoapIn" />
+      <output message="s0:GenerateRandomSoapOut" />
+    </operation>
+    <operation name="GenerateRandomNormalized">
+      <input message="s0:GenerateRandomNormalizedSoapIn" />
+      <output message="s0:GenerateRandomNormalizedSoapOut" />
+    </operation>
+    <operation name="GenerateRandomDotOrg">
+      <input message="s0:GenerateRandomDotOrgSoapIn" />
+      <output message="s0:GenerateRandomDotOrgSoapOut" />
+    </operation>
+    <operation name="GeneratePseudoRandom">
+      <input message="s0:GeneratePseudoRandomSoapIn" />
+      <output message="s0:GeneratePseudoRandomSoapOut" />
+    </operation>
+  </portType>
+  <portType name="GeneratorHttpPost">
+    <operation name="GenerateRandom">
+      <input message="s0:GenerateRandomHttpPostIn" />
+      <output message="s0:GenerateRandomHttpPostOut" />
+    </operation>
+    <operation name="GenerateRandomNormalized">
+      <input message="s0:GenerateRandomNormalizedHttpPostIn" />
+      <output message="s0:GenerateRandomNormalizedHttpPostOut" />
+    </operation>
+    <operation name="GenerateRandomDotOrg">
+      <input message="s0:GenerateRandomDotOrgHttpPostIn" />
+      <output message="s0:GenerateRandomDotOrgHttpPostOut" />
+    </operation>
+    <operation name="GeneratePseudoRandom">
+      <input message="s0:GeneratePseudoRandomHttpPostIn" />
+      <output message="s0:GeneratePseudoRandomHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="GeneratorSoap" type="s0:GeneratorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GenerateRandom">
+      <soap:operation soapAction="http://fernandolucas.info/GenerateRandom" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GenerateRandomNormalized">
+      <soap:operation soapAction="http://fernandolucas.info/GenerateRandomNormalized" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GenerateRandomDotOrg">
+      <soap:operation soapAction="http://fernandolucas.info/GenerateRandomDotOrg" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GeneratePseudoRandom">
+      <soap:operation soapAction="http://fernandolucas.info/GeneratePseudoRandom" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="GeneratorHttpPost" type="s0:GeneratorHttpPost">
+    <http:binding verb="POST" />
+    <operation name="GenerateRandom">
+      <http:operation location="/GenerateRandom" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GenerateRandomNormalized">
+      <http:operation location="/GenerateRandomNormalized" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GenerateRandomDotOrg">
+      <http:operation location="/GenerateRandomDotOrg" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GeneratePseudoRandom">
+      <http:operation location="/GeneratePseudoRandom" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Generator">
+    <port name="GeneratorSoap" binding="s0:GeneratorSoap">
+      <soap:address location="http://www.golemproject.com/Apps/96/Generator.asmx" />
+    </port>
+    <port name="GeneratorHttpPost" binding="s0:GeneratorHttpPost">
+      <http:address location="http://www.golemproject.com/Apps/96/Generator.asmx" />
+    </port>
+  </service>
+</definitions>

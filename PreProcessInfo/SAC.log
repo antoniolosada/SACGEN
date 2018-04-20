@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog>
+  <Settings>
+    <Setting Name="LogFile" Value="SAC.log" />
+    <Setting Name="GenerateInterfacesForClasses" Value="FALSE" />
+    <Setting Name="ProjectName" Value="SAC" />
+    <Setting Name="OutputName" Value="SAC.vbproj" />
+    <Setting Name="OutputDir" Value="F:\DOCUMENTOS\PROY\SAC_.Net\PreProcessInfo\" />
+    <Setting Name="ProjectPath" Value="F:\DOCUMENTOS\PROY\SAC\SAC.vbp" />
+    <Setting Name="MigrateProjectTo" Value="WinExe" />
+  </Settings>
+  <File OldPath="F:\DOCUMENTOS\PROY\SAC\Principal.frm" NewPath="F:\DOCUMENTOS\PROY\SAC_.Net\PreProcessInfo\Principal.vb" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="pbCursos" ObjectType="ProgressBar" PME="Scrolling" Qty="1">ProgressBar property pbCursos.Scrolling was not upgraded.</Issue>
+      <Issue Type="Design" Number="2045" ObjectName="cmdGenerarGrupos" ObjectType="CommandButton" PME="Font" Qty="1">Only TrueType and OpenType fonts are supported in Windows Forms.</Issue>
+    </Section>
+  </File>
+</UpgradeLog>
+

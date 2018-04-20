@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <CopyProjectOption>0</CopyProjectOption>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <StartAction>Project</StartAction>
+    <StartWithIE>true</StartWithIE>
+    <StartArguments>Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\Users\antonio\Dropbox\TONI\PROY\SACGen\SAC.mdb;|RCPReal|ODBC;UID=rcpop;PWD=xunta2006</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <StartAction>Project</StartAction>
+    <StartWithIE>true</StartWithIE>
+    <StartArguments>Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\SAC.mdb;|RCPReal|</StartArguments>
+  </PropertyGroup>
+</Project>

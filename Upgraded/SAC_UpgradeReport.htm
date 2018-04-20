@@ -1,0 +1,120 @@
+﻿<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css">
+		<title>SAC.vbp Upgrade Report</title>
+		
+		<script language="javascript">
+			function outliner () {
+				oMe = window.event.srcElement
+				//get child element
+				var child = document.all[event.srcElement.getAttribute("child",false)];
+				//if child element exists, expand or collapse it.
+				if (null != child)
+					child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+			}
+		
+			function changepic() {
+				uMe = window.event.srcElement;
+				var check = uMe.src.toLowerCase();
+				if (check.lastIndexOf("upgradereport_plus.gif") != -1)
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Minus.gif"
+				}
+				else
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Plus.gif"
+				}
+			}
+		</script>
+		
+	</head>
+	<body topmargin="0" leftmargin="0" rightmargin="0" onclick="outliner();">
+		<h1>Upgrade Report for SAC.vbp</h1>
+		
+		<p><span class="note">
+		<b>Time of Upgrade:  </b>22/03/2013 20:07<br>
+		</span></p>
+		
+		<h2>List of Project Files</h2>
+		<table cellpadding="2" cellspacing="0" width="98%" border="1"bordercolor="white" class="infotable">
+			<tr>
+				<td nowrap class="header">New Filename</td>
+				<td nowrap class="header">Original Filename</td>
+				<td nowrap class="header">File Type</td>
+				<td nowrap class="header">Status</td>
+				<td nowrap class="header">Errors</td>
+				<td nowrap class="header">Warnings</td>
+				<td nowrap class="header">Total Issues</td>
+			</tr>
+		<tr class="row">
+			<td class="content"><IMG alt="expand/collapse section" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue0">&nbsp;(Global Issues)</td>
+			<td class="content"></td>
+			<td class="content"></td>
+			<td class="content">
+		</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue0" bgcolor="#ffffff"><td colspan="8">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="8" class="issuetitle">Global update issues:</td></tr><tr><td class="issuenone">None</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="expand/collapse section" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue1">&nbsp;Principal.vb</td>
+			<td class="content">Principal.frm</td>
+			<td class="content">Form</td>
+			<td class="content">
+		Upgraded with issues</td>	<td class="content">6</td>
+			<td class="content">11</td>
+			<td class="content">17</td>
+		</tr>
+			<tr class="collapsed" id="issue1" bgcolor="#ffffff"><td colspan="8">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="8" class="issuetitle">Upgrade Issues for Principal.frm:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>Severity</td><td class="issuehdr">Location</td><td class="issuehdr">Object Type</td><td class="issuehdr">Object Name</td><td class="issuehdr">Property</td><td class="issuehdr">Description</td><td class="issuehdr">Qty</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">CommandButton</td><td class="issuecontent">cmdGenerarGrupos</td><td class="issuecontent">Font</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2045.aspx'>Only TrueType and OpenType fonts are supported in Windows Forms.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Form</td><td class="issuecontent">frmAgrupacionCursos</td><td class="issuecontent">ClipControls</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2064.aspx'>Form property frmAgrupacionCursos.ClipControls was not upgraded.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">MSComctlLib.ProgressBar</td><td class="issuecontent">pbCursos</td><td class="issuecontent">Appearance</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2064.aspx'>MSComctlLib.ProgressBar property pbCursos.Appearance was not upgraded.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">MSComctlLib.ProgressBar</td><td class="issuecontent">pbTotal</td><td class="issuecontent">Appearance</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2064.aspx'>MSComctlLib.ProgressBar property pbTotal.Appearance was not upgraded.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">ProgressBar</td><td class="issuecontent">pbCursos</td><td class="issuecontent">Scrolling</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2064.aspx'>ProgressBar property pbCursos.Scrolling was not upgraded.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>Design Error</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Variant</td><td class="issuecontent">_HiddenModule</td><td class="issuecontent">array</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2081.aspx'>Array has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdAgrupar_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdAgruparCursos_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdCopiarCursos_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">2</td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdCorregirCursos_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdGenerarListasPalabras_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdPropagarGrupos_Click</td><td class="issuecontent">Boolean</td><td class="issuecontent">Information</td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi1049.aspx'>Use of Null/IsNull() detected.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">13</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">cmdPropagarGrupos_Click</td><td class="issuecontent">DAO.Database</td><td class="issuecontent">DBEngine</td><td class="issuecontent">OpenDatabase</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2065.aspx'>DAO.Database method DBEngine.OpenDatabase has a new behavior.</a></td><td class="issuecontent">2</td></tr>
+					<tr><td width="10" class="issuecontent">14</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">CompruebaSiAsigGrupoRCP</td><td class="issuecontent">Boolean</td><td class="issuecontent">Information</td><td class="issuecontent">IsNull</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi1049.aspx'>Use of Null/IsNull() detected.</a></td><td class="issuecontent">1</td></tr>
+					<tr><td width="10" class="issuecontent">15</td><td class="issuecontent" nowrap>Runtime Warning</td><td class="issuecontent">Form_Load</td><td class="issuecontent">Form</td><td class="issuecontent"></td><td class="issuecontent">Load</td><td class="issuecontent"><a href='http://www.vbtonet.com/ewis/ewi2080.aspx'>Form_Load event was upgraded to Form_Load method and has a new behavior.</a></td><td class="issuecontent">1</td></tr>
+				</table>
+			</td></tr>
+		<tr valign="top">
+			<td class="foot">1 File(s)</td>
+			<td class="foot">&nbsp;</td>
+			<td class="foot">Forms: 1</td>
+			<td class="foot">
+		Upgraded: 1<BR>
+		Not upgraded: 0
+		</td>
+			<td class="foot">6</td>
+			<td class="foot">11</td>
+			<td class="foot">17</td>
+		</tr>
+		</table>
+		<p class="help">
+		</p>
+				<p>
+					<table class = "note">
+						<tr><td nowrap><b>Upgrade Settings</b></td></tr>
+						<tr><td nowrap><b>Log File:</b> SAC.log</td></tr>
+						<tr><td nowrap><b>Migrate Project To:</b> WinExe</td></tr>
+						<tr><td nowrap><b>Output Directory:</b> F:\DOCUMENTOS\PROY\SAC_.Net\Upgraded\</td></tr>
+						<tr><td nowrap><b>Output Name:</b> SAC.vbproj</td></tr>
+						<tr><td nowrap><b>Project Name:</b> SAC</td></tr>
+						<tr><td nowrap><b>Project Path:</b> F:\DOCUMENTOS\PROY\SAC\SAC.vbp</td></tr>
+					</table>
+				</p>
+	</body>
+</html>

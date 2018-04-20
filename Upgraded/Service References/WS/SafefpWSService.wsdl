@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servizos.dxfprcpsw/" name="SafefpWSService" targetNamespace="http://servizos.dxfprcpsw/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://tomcatsrv-2.xunta.es:8080/dxfprcpsw/SafefpWS?xsd=1" namespace="http://servizos.dxfprcpsw/" />
+    </xsd:schema>
+  </types>
+  <message name="procesarQuery">
+    <part name="parameters" element="tns:procesarQuery" />
+  </message>
+  <message name="procesarQueryResponse">
+    <part name="parameters" element="tns:procesarQueryResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <portType name="SafefpWS">
+    <operation name="procesarQuery">
+      <input message="tns:procesarQuery" />
+      <output message="tns:procesarQueryResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+  </portType>
+  <binding name="SafefpWSPortBinding" type="tns:SafefpWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="procesarQuery">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="SafefpWSService">
+    <port name="SafefpWSPort" binding="tns:SafefpWSPortBinding">
+      <soap:address location="http://tomcatsrv-2.xunta.es:8080/dxfprcpsw/SafefpWS" />
+    </port>
+  </service>
+</definitions>

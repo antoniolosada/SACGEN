@@ -1,0 +1,59 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SAC", "SAC.vbproj", "{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SAC", "Estable\20111105\SAC.vbproj", "{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SAV_VB_NETSupport", "SAV_VB_NETSupport\SAV_VB_NETSupport.vbproj", "{27D40887-41EE-45FB-83C8-6E831D3098F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SAC.vbproj", "SAC.vbproj", "{22BCF112-84E8-4C6C-8697-41828CB55B75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Estable", "Estable", "{3CB39CC2-36E7-44D4-8904-31A7D5F9B100}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20111105", "20111105", "{7E83DE75-FE8D-49F4-826D-D0940B5B16B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SAV_VB_NETSupport", "SAV_VB_NETSupport", "{C245AB69-F772-4B34-8A4F-DA252FE7B1AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Debug|x86.ActiveCfg = Debug|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Debug|x86.Build.0 = Debug|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Release|Mixed Platforms.Build.0 = Release|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Release|x86.ActiveCfg = Release|x86
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783}.Release|x86.Build.0 = Release|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Debug|x86.ActiveCfg = Debug|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Debug|x86.Build.0 = Debug|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Release|x86.ActiveCfg = Release|x86
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7}.Release|x86.Build.0 = Release|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Debug|x86.ActiveCfg = Debug|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Debug|x86.Build.0 = Debug|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Release|Mixed Platforms.Build.0 = Release|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Release|x86.ActiveCfg = Release|x86
+		{27D40887-41EE-45FB-83C8-6E831D3098F5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E83DE75-FE8D-49F4-826D-D0940B5B16B1} = {3CB39CC2-36E7-44D4-8904-31A7D5F9B100}
+		{82B3A2BD-ED6A-4DEC-A054-6017B9BFA783} = {22BCF112-84E8-4C6C-8697-41828CB55B75}
+		{E0C7CA8B-659F-4A5C-8A38-353BF88788E7} = {7E83DE75-FE8D-49F4-826D-D0940B5B16B1}
+		{27D40887-41EE-45FB-83C8-6E831D3098F5} = {C245AB69-F772-4B34-8A4F-DA252FE7B1AB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\SAC.exe.config
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\SAC.exe
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\Artinsoft.VB6.DB.dll
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\Artinsoft.VB6.dll
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\SAV_VB_NETSupport.dll
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\SAV_VB_NETSupport.pdb
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\Artinsoft.VB6.xml
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\bin\Artinsoft.VB6.DB.xml
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\obj\x86\Release\SAC.frmAgrupacionCursos.resources
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\alosgon\Dropbox\TONI\PROY\SAC_.Net\Upgraded\obj\x86\Release\SAC.exe
